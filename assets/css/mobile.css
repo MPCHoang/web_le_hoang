@@ -58,7 +58,9 @@ html {
 }
 
 .header_mobile-search input {
+    width: 200px;
     height: 30px;
+    padding: 10px;
 }
 
 .header_mobile-search button {
