@@ -1,3 +1,9 @@
+:root {
+    --backColor: #1d559f;
+    --sizeAll: 20px;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +24,7 @@ html {
 .header_pc {
     width: 100%;
     height: 100px;
-    background-color: #1d559f;
+    background-color: var(--backColor);
     justify-content: space-around;
     align-items: center;
 }
@@ -57,7 +63,7 @@ html {
     text-decoration: none;
     padding: 10px 10px;
     color: #fff;
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 ul.menu > li > a:hover {
@@ -75,7 +81,7 @@ ul.menu > li:first-child {
 }
 
 .subcontent {
-    margin-top: 1px;
+    margin-top: 2px;
     display: none !important;
     position: absolute;
     text-align: left !important;
@@ -103,12 +109,12 @@ ul.menu > li.sub:hover .subcontent {
 #nav_find input {
     padding: 2px 10px;
 }
+
 /*SEARCH BOX*/
 
 .search {
     width: 80%;
     margin: 20px auto;
-    font-size: 30px;
     padding: 10px 0;
     text-align: center;
     background-color: rgba(218, 230, 230, 0.9);
@@ -130,21 +136,21 @@ ul.menu > li.sub:hover .subcontent {
     height: 30px;
     background-color: #fff;
     margin-right: 5px;
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 .search_detail-in > input, .search_detail-in > select {
     width: 80%;
     height: 30px;
     border: 0;
-    font-size: 25px;
+    font-size: var(--sizeAll);
 }
 
 .search_detail > button {
     width: 20%;
     height: 30px;
     background-color: #f7941d;
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 @keyframes changeTitle {
@@ -162,7 +168,7 @@ ul.menu > li.sub:hover .subcontent {
 }
 
 .education-program, .test-schedule, .support-utility, .news, .teacher-group, .comments {
-    margin: 40px 0;
+    margin: 100px 0;
 }
 
 .head-title {
@@ -170,7 +176,7 @@ ul.menu > li.sub:hover .subcontent {
     text-align: center;
     animation: changeTitle 3s infinite;
     margin-bottom: 20px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 /*EDUCATION PROGRAM*/
@@ -229,7 +235,7 @@ ul.menu > li.sub:hover .subcontent {
     margin-bottom: 50px;
 }
 
-.main1 > .subject > a >img {
+.main1 > .subject > a > img {
     width: 50%;
 }
 
@@ -335,10 +341,14 @@ a.info-teacher > img {
 
 /*COMMENTS*/
 
+.slider-outer_mobile {
+    display: none;
+}
+
 .slider-outer {
     width: 100%;
-    height: 300px;
     position: relative;
+    display: block;
 }
 
 .slider-outer i {
@@ -348,14 +358,14 @@ a.info-teacher > img {
 
 .slider-inner {
     width: 80%;
-    height: 300px;
     margin: 0 auto;
 }
 
 .slider-inner > img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     display: none;
+    border-radius: 50px 0 50px 0;
 }
 
 .slider-inner > img.active {
@@ -365,7 +375,7 @@ a.info-teacher > img {
 .prev, .next {
     position: absolute;
     background-color: rgba(191, 191, 191, 0.8);
-    top: 40%;
+    top: 30%;
     border-radius: 50%;
 }
 
@@ -381,7 +391,7 @@ a.info-teacher > img {
 
 footer {
     width: 100%;
-    background-color: #1d559f;
+    background-color: var(--backColor);
     position: relative;
 }
 
@@ -411,7 +421,7 @@ footer {
 
 .footer_contact > p {
     color: #fff;
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 #media {
@@ -422,6 +432,7 @@ footer {
 #media > a {
     font-size: 50px;
     padding-right: 10px;
+    color: #66a3ff;
 }
 
 .footer_address {
@@ -447,7 +458,7 @@ footer {
 
 #detail, .footer_address-content > p {
     margin: 20px 0px;
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 #detail > a {
@@ -464,7 +475,7 @@ footer {
 }
 
 #detail > a > div:last-child {
-    font-size: 20px;
+    font-size: var(--sizeAll);
     width: 80%;
 }
 
@@ -475,7 +486,7 @@ footer {
 .footer_copyright {
     width: 100%;
     background-color: #fff;
-    color: #1d559f;
+    color: var(--backColor);
     text-transform: uppercase;
     text-align: center;
     padding: 10px 0;
@@ -496,7 +507,7 @@ footer {
 }
 
 .main-contact > .head {
-    font-size: 35px;
+    font-size: calc(var(--sizeAll) + 15px);
 }
 
 .main-contact > .head + p {
@@ -504,7 +515,7 @@ footer {
 }
 
 .head-title +  p {
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 .map-form-contact {
@@ -536,7 +547,7 @@ footer {
 }
 
 .fill > label{
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 .fill > input {
@@ -544,13 +555,13 @@ footer {
     width: 60%;
     height: 30px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 #content {
     width: 60%;
     resize: none;
-    font-size: 20px;
+    font-size: var(--sizeAll);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -581,7 +592,7 @@ footer {
 .edu_course {
     width: 70%;
     margin: 20px auto;
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 .edu_course ul {
@@ -674,7 +685,7 @@ footer {
 .paymentG {
     width: 70%;
     margin: 20px auto;
-    font-size: 20px;
+    font-size: var(--sizeAll);
 }
 
 .paymentG > p:last-child {

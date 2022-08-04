@@ -50,7 +50,7 @@ html {
     margin-top: 10px;
 }
 
-/*MENU MOBILE*/
+/*NAV MOBILE*/
 
 .header_mobile-navigation {
     justify-content: space-between;
@@ -145,7 +145,7 @@ html {
 }
 
 
-/*MENU PC*/
+/*NAV PC*/
 
 .menu {
     display: none;
@@ -213,13 +213,21 @@ html {
 
 /*SUPPORT-UTILITY*/
 
-.main1>.subject {
+.main1 {
+    width: 100%;
+}
+
+.main1 > .subject {
     width: 50%;
     margin: 15px 0;
 }
 
-.main1 >.subject > a {
+.main1 > .subject > a {
     font-size: 20px;
+}
+
+.main1 > .subject > a > img {
+    width: 80%;
 }
 
 /*NEWS*/
@@ -253,7 +261,7 @@ html {
 
 .mobile-main_notification {
     width: 100%;
-    height: 200px;
+    height: 300px;
     position: relative;
 }
 
@@ -282,52 +290,64 @@ html {
     background-image: url(../images/infomation/background.jpg);
 }
 
-.teacher_slider-outer, .slider-outer {
+.slider-outer_mobile {
+    display: block;
+    background-image: url(../images/infomation/background.jpg);
+}
+
+.slider-outer {
+    display: none;
+}
+
+.teacher_slider-outer, .slider-outer_mobile {
     width: 100%;
     height: 300px;
     position: relative;
 }
 
-.teacher_slider-outer i, .slider-outer i {
+.teacher_slider-outer i, .slider-outer_mobile i {
     line-height: 300px;
     font-size: 30px;
     padding: 5px;
 }
 
-.teacher_slider-inner, .slider_inner {
-    width: 90%;
+.teacher_slider-inner, .slider-outer_mobile > .slider-inner {
+    width: 80%;
     height: 300px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.teacher_slider-inner > img, .slider_inner > img {
-    width: 100%;
-    height: 300px;
+.teacher_slider-inner > img, .slider-outer_mobile > .slider-inner > img {
+    width: 90%;
+    height: 250px;
     display: none;
+    border-radius: 50%;
 }
 
-.teacher_slider-inner > img.teacher_active, .slider_inner > img.active {
+.teacher_slider-inner > img.teacher_active, .slider-outer_mobile > .slider-inner > img.active {
     display: block;
 }
 
-.teacher_prev, .teacher_next, .prev, .next {
+.teacher_prev, .teacher_next, .slider-outer_mobile > .prev, .slider-outer_mobile > .next {
     position: absolute;
-    width: 9%;
+    width: 10%;
     height: 300px;
     background-color: rgba(191, 191, 191, 0.8);
     top: 0;
 }
 
-.prev, .next {
-    border-radius: 0%;;
+.slider-outer_mobile > .prev, .slider-outer_mobile > .next {
+    border-radius: 0%;
 }
 
 .teacher_prev, .prev {
-    left: 15px;
+    left: 0px;
 }
 
 .teacher_next, .next {
-    right: 15px;
+    right: 0px;
 }
 
 /*FOOTER*/
