@@ -319,14 +319,17 @@ html {
     justify-content: center;
 }
 
-.teacher_slider-inner > img, .slider-outer_mobile > .slider-inner > img {
-    width: 90%;
-    height: 250px;
+.teacher_slider-inner > a, .slider-outer_mobile > .slider-inner > a {
     display: none;
+}
+
+.teacher_slider-inner > a > img, .slider-outer_mobile > .slider-inner > a > img {
+    width: 100%;
+    height: 250px;
     border-radius: 50%;
 }
 
-.teacher_slider-inner > img.teacher_active, .slider-outer_mobile > .slider-inner > img.active {
+.teacher_slider-inner > a.teacher_active, .slider-outer_mobile > .slider-inner > a.active {
     display: block;
 }
 
@@ -458,4 +461,19 @@ html {
 
 .submit-reset > input:last-child {
     background-color: #333;
+}
+
+
+/*CSS FOR PAYMENTGUIDE*/
+
+.paymentG {
+    width: 90%;
+}
+
+.bank_info {
+    display: block;
+}
+
+.bank_info img {
+    width: 100%;
 }

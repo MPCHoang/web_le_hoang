@@ -1,48 +1,57 @@
 $(document).ready(function() {
     
-    $("div.back-home").click(function() {
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 80){
+            $('#back-home').fadeIn();
+        } else{
+            $('#back-home').fadeOut();
+        }
+    })
+
+
+    $('#back-home').click(function() {
         $("html, body").animate( {
             scrollTop: 0
         }, 1000)
     })
 
     $('.teacher_next').on('click', function() {
-        let currentImgTeacher = $('.teacher_active');
-        let nextImgTeacher = currentImgTeacher.next();
+        let currentATeacher = $('.teacher_active');
+        let nextATeacher = currentATeacher.next();
 
-        if(nextImgTeacher.length) {
-            currentImgTeacher.removeClass('teacher_active');
-            nextImgTeacher.addClass('teacher_active');
+        if(nextATeacher.length) {
+            currentATeacher.removeClass('teacher_active');
+            nextATeacher.addClass('teacher_active');
         }
     })
 
     $('.teacher_prev').on('click', function() {
-        let currentImgTeacher = $('.teacher_active');
-        let prevImgTeacher = currentImgTeacher.prev();
+        let currentATeacher = $('.teacher_active');
+        let prevATeacher = currentATeacher.prev();
 
-        if(prevImgTeacher.length) {
-            currentImgTeacher.removeClass('teacher_active');
-            prevImgTeacher.addClass('teacher_active');
+        if(prevATeacher.length) {
+            currentATeacher.removeClass('teacher_active');
+            prevATeacher.addClass('teacher_active');
         }
     })
 
     $('.next').on('click', function() {
-        let currentImg = $('.active');
-        let nextImg = currentImg.next();
+        let currentA = $('.active');
+        let nextA = currentA.next();
 
-        if(nextImg.length) {
-            currentImg.removeClass('active');
-            nextImg.addClass('active');
+        if(nextA.length) {
+            currentA.removeClass('active');
+            nextA.addClass('active');
         }
     });
 
     $('.prev').on('click', function() {
-        let currentImg = $('.active');
-        let prevImg = currentImg.prev();
+        let currentA = $('.active');
+        let prevA = currentA.prev();
 
-        if(prevImg.length) {
-            currentImg.removeClass('active');
-            prevImg.addClass('active');
+        if(prevA.length) {
+            currentA.removeClass('active');
+            prevA.addClass('active');
         }
     });
 

@@ -19,6 +19,19 @@ html {
     display: flex;
 }
 
+#back-home {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 10;
+}
+
+#back-home > img {
+    width: 100%;
+}
+
 /*HEADER*/
 
 .header_pc {
@@ -176,7 +189,6 @@ ul.menu > li.sub:hover .subcontent {
     text-align: center;
     animation: changeTitle 3s infinite;
     margin-bottom: 20px;
-    /* text-transform: capitalize; */
 }
 
 /*EDUCATION PROGRAM*/
@@ -361,14 +373,17 @@ a.info-teacher > img {
     margin: 0 auto;
 }
 
-.slider-inner > img {
-    width: 100%;
-    height: 250px;
+.slider-inner > a {
     display: none;
+}
+
+.slider-inner > a > img {
+    width: 100%;
+    height: 200px;
     border-radius: 50px 0 50px 0;
 }
 
-.slider-inner > img.active {
+.slider-inner > a.active {
     display: block;
 }
 
@@ -393,17 +408,6 @@ footer {
     width: 100%;
     background-color: var(--backColor);
     position: relative;
-}
-
-.back-home {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 50px;
-    right: 30px;
-}
-.back-home > img {
-    width: 100%;
 }
 
 .footer_contact {
@@ -432,7 +436,7 @@ footer {
 #media > a {
     font-size: 50px;
     padding-right: 10px;
-    color: #66a3ff;
+    color: #fff;
 }
 
 .footer_address {
@@ -686,6 +690,7 @@ footer {
     width: 70%;
     margin: 20px auto;
     font-size: var(--sizeAll);
+    line-height: 40px;
 }
 
 .paymentG > p:last-child {
@@ -697,9 +702,52 @@ footer {
     margin-left: 50px;
 }
 
+.method > ul:last-child {
+    list-style-type: none;
+}
+
 .method > p:first-child{
     font-weight: bold;
 }
+
+@keyframes changeLink {
+    from {
+        color: #ffa500;
+    }
+
+    to {
+        color: #333;
+    }
+}
+
+.method a {
+    text-decoration: none;
+}
+
+.bank_info + a {
+    animation: changeLink 2s infinite;
+}
+
+.method a:hover {
+    color: #ff0000 !important;
+}
+
+.bank {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.bank_info > img {
+    width: 15%;
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.bank_info > p {
+    padding: 20px;
+    border: 1px solid #333;
+}
+
 
 
 
