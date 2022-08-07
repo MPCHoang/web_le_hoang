@@ -8,6 +8,11 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#back-home {
+    bottom: 40px;
+    right: 10px;
+}
+
 /*CSS FOR HOME*/
 
 .head-title {
@@ -61,6 +66,7 @@ html {
     width: 200px;
     height: 30px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .header_mobile-search button {
@@ -375,11 +381,6 @@ html {
 
 .footer_address-content > h1 {
     font-size: 20px;
-}
-
-.back-home {
-    bottom: 37px;
-    right: 5px;
 }
 
 /*CSS FOR CONTACT*/
