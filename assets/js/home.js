@@ -106,30 +106,31 @@ $(document).ready(function() {
     })
 
     $('#chuong_trinh_ngan_han .courses > div:nth-child(1)').click(function () {
-        $('#chuyen_de_21 > div:nth-child(1)').addClass('edu-active');
-        $('#chuyen_de_21 > div:nth-child(2)').removeClass('edu-active');
-        $('#chuyen_de_21 > div:nth-child(3)').removeClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(1)').addClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(3)').removeClass('edu-active');
     })
 
     $('#chuong_trinh_ngan_han .courses > div:nth-child(2)').click(function () {
-        $('#chuyen_de_21 > div:nth-child(1)').removeClass('edu-active');
-        $('#chuyen_de_21 > div:nth-child(2)').addClass('edu-active');
-        $('#chuyen_de_21 > div:nth-child(3)').removeClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(2)').addClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(3)').removeClass('edu-active');
     })
 
     $('#chuong_trinh_ngan_han .courses > div:nth-child(3)').click(function () {
-        $('#chuyen_de_21 > div:nth-child(1)').removeClass('edu-active');
-        $('#chuyen_de_21 > div:nth-child(2)').removeClass('edu-active');
-        $('#chuyen_de_21 > div:nth-child(3)').addClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_12 > div:nth-child(3)').addClass('edu-active');
     })
 
     $('#chuyen_vien_do_hoa_va_web .courses > div:nth-child(1)').click(function () {
-        $('#chuyen_de_31 > div:nth-child(1)').addClass('edu-active');
+        $('#chuyen_de_13 > div:nth-child(1)').addClass('edu-active');
     })
 
 
 //Để làm thay đổi của lập trình di động
 
+    //Thay đổi nav tổng
     $('#mobile_p > div:nth-child(1)').click(function () {
 
         $('#mobile_p > div:nth-child(1)').addClass('edu_border');
@@ -150,8 +151,24 @@ $(document).ready(function() {
 
     })
 
+    //Thay đổi các nav con
+    $('#cac_lop_lap_trinh_vien_mobile .courses > div:nth-child(1)').click(function () {
+        $('#chuyen_de_21 > div:nth-child(1)').addClass('edu-active');
+        $('#chuyen_de_21 > div:nth-child(2)').removeClass('edu-active');
+    })
+
+    $('#cac_lop_lap_trinh_vien_mobile .courses > div:nth-child(2)').click(function () {
+        $('#chuyen_de_21 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_21 > div:nth-child(2)').addClass('edu-active');
+    })
+
+    $('#cac_chuyen_de_khac .courses > div:nth-child(1)').click(function () {
+        $('#chuyen_de_22 > div:nth-child(1)').addClass('edu-active');
+    })
+
 //Để làm thay đổi của tin học văn phòng
 
+    //Thay đổi nav tổng
     $('#itOffice > div:nth-child(1)').click(function () {
 
         $('#itOffice > div:nth-child(1)').addClass('edu_border');
@@ -188,8 +205,36 @@ $(document).ready(function() {
         
     })
 
+    //Thay đổi các nav con
+    $('#tin_hoc_vp .courses > div:nth-child(1)').click(function () {
+        $('#chuyen_de_31 > div:nth-child(1)').addClass('edu-active');
+        $('#chuyen_de_31 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_31 > div:nth-child(3)').removeClass('edu-active');
+    })
+
+    $('#tin_hoc_vp .courses > div:nth-child(2)').click(function () {
+        $('#chuyen_de_31 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_31 > div:nth-child(2)').addClass('edu-active');
+        $('#chuyen_de_31 > div:nth-child(3)').removeClass('edu-active');
+    })
+
+    $('#tin_hoc_vp .courses > div:nth-child(3)').click(function () {
+        $('#chuyen_de_31 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_31 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_31 > div:nth-child(3)').addClass('edu-active');
+    })
+
+    $('#chuyen_de_excel .courses > div:nth-child(1)').click(function () {
+        $('#chuyen_de_32 > div:nth-child(1)').addClass('edu-active');
+    })
+
+    $('#chuyen_de_powerbi .courses > div:nth-child(1)').click(function () {
+        $('#chuyen_de_33 > div:nth-child(1)').addClass('edu-active');
+    })
+
 //Để làm thay đổi của MOS
 
+    //Thay đỏi nav tổng
     $('#itOfficeMOS > div:nth-child(1)').click(function () {
 
         $('#itOfficeMOS > div:nth-child(1)').addClass('edu_border');
@@ -198,8 +243,28 @@ $(document).ready(function() {
 
     })
 
+    //Thay đổi các nav con
+    $('#thvp_mos .courses > div:nth-child(1)').click(function () {
+        $('#chuyen_de_41 > div:nth-child(1)').addClass('edu-active');
+        $('#chuyen_de_41 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_41 > div:nth-child(3)').removeClass('edu-active');
+    })
+
+    $('#thvp_mos .courses > div:nth-child(2)').click(function () {
+        $('#chuyen_de_41 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_41 > div:nth-child(2)').addClass('edu-active');
+        $('#chuyen_de_41 > div:nth-child(3)').removeClass('edu-active');
+    })
+
+    $('#thvp_mos .courses > div:nth-child(3)').click(function () {
+        $('#chuyen_de_41 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_41 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_41 > div:nth-child(3)').addClass('edu-active');
+    })
+
 //Để làm thay đổi của mạng máy tính
 
+    //Thay đổi nav tổng
     $('#comNetwork > div:nth-child(1)').click(function () {
 
         $('#comNetwork > div:nth-child(1)').addClass('edu_border');
@@ -208,4 +273,32 @@ $(document).ready(function() {
 
     })
 
+    //Thay đổi các nav con
+    $('#mang_may_tinh .courses > div:nth-child(1)').click(function () {
+        $('#chuyen_de_51 > div:nth-child(1)').addClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(3)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(4)').removeClass('edu-active');
+    })
+
+    $('#mang_may_tinh .courses > div:nth-child(2)').click(function () {
+        $('#chuyen_de_51 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(2)').addClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(3)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(4)').removeClass('edu-active');
+    })
+
+    $('#mang_may_tinh .courses > div:nth-child(3)').click(function () {
+        $('#chuyen_de_51 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(3)').addClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(4)').removeClass('edu-active');
+    })
+
+    $('#mang_may_tinh .courses > div:nth-child(4)').click(function () {
+        $('#chuyen_de_51 > div:nth-child(1)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(2)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(3)').removeClass('edu-active');
+        $('#chuyen_de_51 > div:nth-child(4)').addClass('edu-active');
+    })
 })
