@@ -113,6 +113,7 @@ html {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    line-height: 60px;
 }
 
 .nav_mobile-link{
@@ -477,4 +478,36 @@ html {
 
 .bank_info img {
     width: 100%;
+}
+
+
+/*CSS FOR EDUCATION*/
+.edu_course {
+    width: 95%;
+}
+
+.courses {
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+}
+
+.courses > div { 
+    width: 70%;
+    margin: 0 auto 20px auto;
+}
+
+.courses-detail > div {
+    width: 70%;
+}
+
+.edu_nav-choose {
+    display: block;
+}
+
+.edu_nav-choose > div {
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: center;
 }

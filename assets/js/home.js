@@ -269,33 +269,33 @@ $(document).ready(function() {
 
         $('#comNetwork > div:nth-child(1)').addClass('edu_border');
 
-        $('#mang_may_tinh').addClass('edu-active');
+        $('#mmt').addClass('edu-active');
 
     })
 
     //Thay đổi các nav con
-    $('#mang_may_tinh .courses > div:nth-child(1)').click(function () {
+    $('#mmt .courses > div:nth-child(1)').click(function () {
         $('#chuyen_de_51 > div:nth-child(1)').addClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(2)').removeClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(3)').removeClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(4)').removeClass('edu-active');
     })
 
-    $('#mang_may_tinh .courses > div:nth-child(2)').click(function () {
+    $('#mmt .courses > div:nth-child(2)').click(function () {
         $('#chuyen_de_51 > div:nth-child(1)').removeClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(2)').addClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(3)').removeClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(4)').removeClass('edu-active');
     })
 
-    $('#mang_may_tinh .courses > div:nth-child(3)').click(function () {
+    $('#mmt .courses > div:nth-child(3)').click(function () {
         $('#chuyen_de_51 > div:nth-child(1)').removeClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(2)').removeClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(3)').addClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(4)').removeClass('edu-active');
     })
 
-    $('#mang_may_tinh .courses > div:nth-child(4)').click(function () {
+    $('#mmt .courses > div:nth-child(4)').click(function () {
         $('#chuyen_de_51 > div:nth-child(1)').removeClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(2)').removeClass('edu-active');
         $('#chuyen_de_51 > div:nth-child(3)').removeClass('edu-active');
