@@ -76,7 +76,7 @@ html {
 .menu > li > a {
     display: block;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 15px 20px;
     color: #fff;
     font-size: var(--sizeAll);
 }
@@ -111,7 +111,8 @@ ul.menu > li.sub:hover .subcontent {
 }
 
 #nav_find {
-    margin: 10px 10px 10px auto;
+    align-items: center;
+    margin: 0 10px 0 auto;
     border-left: none;
 }
 
@@ -233,7 +234,7 @@ ul.menu > li.sub:hover .subcontent {
 }
 
 .main > .subject > a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: #379dae;
 }
 
@@ -325,6 +326,10 @@ ul.menu > li.sub:hover .subcontent {
 
 .main2 a:hover img{
     transform: scale(1.2);
+}
+
+.main2 a:hover { 
+    border: 3px solid #ff9900;
 }
 
 
@@ -653,7 +658,7 @@ footer {
 }
 
 .courses > div:hover {
-    border: 4px solid #ff9900;
+    border: 3px solid #ff9900;
 }
 
 .courses-detail {

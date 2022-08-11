@@ -105,8 +105,8 @@ html {
     max-width: 100%;
     padding: 60px 10px;
     transform: translateX(-100%);
-    transition: transform linear 0.5s;
-    z-index: 1; /*để nổi lên*/
+    transition: transform linear 0.6s;
+    z-index: 10; /*để nổi lên*/
 }
 
 .nav_mobile-list {
@@ -510,4 +510,8 @@ html {
     border-radius: 10px;
     margin-bottom: 5px;
     text-align: center;
+}
+
+.courses-detail > p {
+    font-size: 15px;
 }
