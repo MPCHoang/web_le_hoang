@@ -25,7 +25,7 @@ $(document).ready(function() {
 
         if(nextATeacher.length) {
             currentATeacher.removeClass('teacher_active');
-            nextATeacher.addClass('teacher_active');
+            nextATeacher.addClass('teacher_active').css('animation', 'sliderLtR 1.5s 1');
         }
     });
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
         if(prevATeacher.length) {
             currentATeacher.removeClass('teacher_active');
-            prevATeacher.addClass('teacher_active');
+            prevATeacher.addClass('teacher_active').css('animation', 'sliderRtL 1.5s 1');
         }
     });
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
         if(nextA.length) {
             currentA.removeClass('active');
-            nextA.addClass('active');
+            nextA.addClass('active').css('animation', 'sliderLtR 1.5s 1');
         }
     });
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
         if(prevA.length) {
             currentA.removeClass('active');
-            prevA.addClass('active');
+            prevA.addClass('active').css('animation', 'sliderRtL 1.5s 1');
         }
     });
 
