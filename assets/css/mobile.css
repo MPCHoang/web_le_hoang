@@ -92,7 +92,7 @@ html {
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
     animation: fadeIn linear 0.5s;
-    z-index: 1; /*để nổi lên*/
+    z-index: 20; /*để nổi lên*/
 }
 
 .nav_mobile {
@@ -106,7 +106,7 @@ html {
     padding: 60px 10px;
     transform: translateX(-100%);
     transition: transform linear 0.6s;
-    z-index: 10; /*để nổi lên*/
+    z-index: 20; /*để nổi lên*/
 }
 
 .nav_mobile-list {
@@ -472,11 +472,17 @@ html {
     width: 90%;
 }
 
+.paymentG > p:nth-child(2) {
+    margin: 0;
+}
+
 .bank_info {
     display: block;
 }
 
-.bank_info img {
+.bank_info > img {
+    border-right: 0;
+    border-bottom: 2px solid #333;
     width: 100%;
 }
 

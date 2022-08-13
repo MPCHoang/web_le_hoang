@@ -391,7 +391,6 @@ a.info-teacher > img {
     width: 100%;
     height: 200px;
     border-radius: 50px 0 50px 0;
-    object-fit: cover;
 }
 
 .slider-inner > a.active {
@@ -827,12 +826,16 @@ footer {
     text-decoration: none;
 }
 
-.bank_info + a {
-    animation: changeLink 2s infinite;
-}
-
 .method a:hover {
     color: #ff0000 !important;
+}
+
+.bank_info {
+    border: 2px solid #333;
+}
+
+.bank_info + a {
+    animation: changeLink 2s infinite;
 }
 
 .bank {
@@ -842,13 +845,12 @@ footer {
 
 .bank_info > img {
     width: 15%;
-    border: 1px solid #333;
     padding: 5px;
+    border-right: 2px solid #333;
 }
 
 .bank_info > p {
-    padding: 20px;
-    border: 1px solid #333;
+    padding: 18px;
 }
 
 
